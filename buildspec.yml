@@ -6,7 +6,7 @@ env:
 phases:
   install:
     runtime-versions:
-      nodejs: 20.11.0
+      nodejs: 20
     commands:
       - echo "Installing source NPM dependencies…"
       - npm install
