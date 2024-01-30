@@ -1,0 +1,52 @@
+<figure>
+    <a [routerLink]="['product-detail', product.id]" class="pl-w-backside">
+        <img [src]="product.image_path"  />
+        
+    </a>
+
+</figure>
+<div class="pl-caption">
+    <p class="pl-price-block">
+        <span class="pl-price-old"></span>
+        <span class="pl-price">$ {{product.price }}</span>
+    </p>
+    <p class="pl-name text-capitalize"> {{product.name}}</p>
+    <!-- <span class="stars-rating"><span class="stars"></span></span> -->
+</div>
+
+
+
+<!-- <img [src]="product.link" />
+<div class="productTitle row">
+    <div class="col-xs-12 col-md-12 col-sm-12 text-capitalize">
+        {{product.productDisplayName}}
+    </div>
+</div> -->
+<!-- 
+<div class="row">
+    <div class="col-xs-12 col-md-12 col-sm-12">
+        
+        <span class="priceAfterDiscount">{{product.price | currency}}</span>
+        
+    </div>
+    <div class="buttons has-addons is-centered">
+        <a class="button is-light" (click)="viewProduct()">
+            <span class="icon is-small">
+                <i class="fa fa-eye"></i>
+            </span>
+            <span>View</span>
+        </a>
+        <a class="button is-light" (click)="addProductToCart()">
+            <span class="icon is-small">
+                <i class="fa fa-shopping-cart"></i>
+            </span>
+            <span>Add to cart</span>
+        </a>
+        <a class="button is-light" (click)="buyProduct()">
+            <span class="icon is-small">
+                <i class="fa fa-dollar"></i>
+            </span>
+            <span>Buy!</span>
+        </a>
+    </div>
+</div> -->

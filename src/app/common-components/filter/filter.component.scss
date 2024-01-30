@@ -1,0 +1,22 @@
+input:checked + span { font-weight: bold; }
+
+.color-item {
+  display: inline-table;
+
+  input {
+    display: none;
+
+    &:checked + span {
+      border: 2px solid #000;
+    }
+
+    & + span {
+      border: 1px solid #dbdbdb;
+      border-radius: 4px;
+      display: block;
+      height: 30px;
+      margin-right: 10px;
+      width: 30px;
+    }
+  }
+}

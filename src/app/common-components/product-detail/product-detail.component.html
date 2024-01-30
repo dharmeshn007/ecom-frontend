@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+                  <div class="preview-pic tab-content text-center">
+                      <img [src]="product.image_path" />  
+                    </div>
+                </div>
+                
+                <div class="details col-md-6">
+                    <div class="row">
+                        <h3 class="product-title text-capitalize">{{product.name }}</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-3">
+                          <p class="small text-muted mb-1">Category</p>
+                          <p>{{product.category }}</p>
+                        </div>
+                        <div class="col mb-3">
+                          <p class="small text-muted mb-1">Sub Category</p>
+                          <p>{{product.subCategory }}</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mb-3">
+                          <p class="small text-muted mb-1">Article Type</p>
+                          <p>{{product.articleType }}</p>
+                        </div>
+                        <div class="col mb-3">
+                          <p class="small text-muted mb-1">Usage</p>
+                          <p>{{product.usage }}</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mb-3">
+                          <p class="small text-muted mb-1">Season</p>
+                          <p>{{product.season }}</p>
+                        </div>
+                        <div class="col mb-3">
+                          <p class="small text-muted mb-1">Year</p>
+                          <p>{{product.year }}</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col mb-3">
+                          <p class="small text-muted mb-1">Price</p>
+                          <p>$ {{product.price }}</p>
+                        </div>
+                        <div class="col mb-3">
+                          <p class="small text-muted mb-1">Color</p>
+                          <p>{{product.baseColour }}</p>
+                        </div>
+                      </div>
+                    
+                    <!-- <h3 class="product-title text-capitalize">{{product.name }}</h3> -->
+                    <!-- <div class="rating">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="review-no">41 reviews</span>
+                    </div> -->
+                    <!-- <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia
+                        sem sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p>
+                    <h4 class="price">Category: <span>{{product.category }}</span></h4>
+                    <h4 class="price">Article Type: <span>{{product.articleType }}</span></h4>
+                    <h4 class="price">Sub category: <span>{{product.subCategory }}</span></h4>
+                    <h4 class="price">current price: <span>$ {{product.price }}</span></h4>
+                    <h4 class="price">Year: <span>{{product.year }}</span></h4>
+                    <h4 class="price">Season: <span>{{product.season }}</span></h4>
+                    <h4 class="price">Usage: <span>{{product.usage }}</span></h4>
+                    <h4 class="price">Color: <span>{{product.baseColour }}</span></h4> -->
+
+                    <div class="action">
+                        <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="gap-50 hidden-xs"></div>

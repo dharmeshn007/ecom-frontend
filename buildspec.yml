@@ -1,0 +1,22 @@
+version: 0.2
+env:
+  variables:
+    CACHE_CONTROL: "86400"
+    BUILD_FOLDER: "dist/amcart-E-Commerce"
+phases:
+  install:
+    commands:
+      - echo "Installing source NPM dependencies…"
+      - npm install
+      - npm install -g @angular/cli
+  build:
+    commands:
+      - echo Build started on `date`
+      - ng run amcart-E-Commerce:collect-vars
+      - ng build
+  post_build:
+    commands:
+      - aws s3 cp ${BUILD_FOLDER} s3://${S3_BUCKET} --recursive --acl public-read --cache-control max-age=${CACHE_CONTROL}
+      - echo Build completed on `date`
+      - echo 'Invalidating distribuition cache' 
+      - aws cloudfront create-invalidation --distribution-id ${DISTRIBUTION_ID} --paths "/*"

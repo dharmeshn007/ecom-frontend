@@ -1,0 +1,27 @@
+<div class="row justify-content-center my-5">
+    <div class="col-8">
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col mb-2 h5">
+                        <p>Authorization Example For Admin and User</p>
+                    </div>
+                    <div class="row">
+                        <div class="col mb-4">
+                            <button type="button" class="btn btn-sm btn-sec-col" (click)="adminClick()">Admin click here</button>
+                        </div>
+                  
+                        <div class="col mb-8">
+                            <button type="button" class="btn btn-sm btn-sec-col" (click)="userClick()">User click here</button>
+                        </div>
+                    </div>
+                    
+                    <div *ngIf="apiMessage">
+                        <div class="alert alert-dark">Api Message:- {{apiMessage}}</div>
+                        <div class="alert alert-dark" *ngIf="apiStatusCode">Api Status Code:- {{apiStatusCode}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

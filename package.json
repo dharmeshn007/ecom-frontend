@@ -1,0 +1,51 @@
+{
+  "name": "amcart-E-Commerce",
+  "version": "1.0.0",
+  "description": "AmCart Application E-Commerce",
+  "author": "Dharmesh Nadola",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "test:headless": "ng test --watch=false --browsers=ChromeHeadless"
+  },
+  "dependencies": {
+    "@angular-slider/ngx-slider": "^2.0.4",
+    "@angular/animations": "^14.2.10",
+    "@angular/cdk": "^13.0.0",
+    "@angular/common": "^14.2.10",
+    "@angular/compiler": "^14.2.10",
+    "@angular/core": "^14.2.10",
+    "@angular/forms": "^14.2.10",
+    "@angular/material": "^13.0.0",
+    "@angular/platform-browser": "^14.2.10",
+    "@angular/platform-browser-dynamic": "^14.2.10",
+    "@angular/router": "^14.2.10",
+    "aws-amplify": "^4.3.43",
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.10.2",
+    "ng-process-env": "^15.0.1",
+    "ngx-pagination": "^6.0.3",
+    "ngx-stars": "^1.6.4",
+    "rxjs": "~7.5.7",
+    "tslib": "^2.4.1",
+    "zone.js": "~0.12.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^14.2.9",
+    "@angular/cli": "~14.2.9",
+    "@angular/compiler-cli": "^14.2.10",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.1",
+    "karma-chrome-launcher": "~3.1.1",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~4.8.4"
+  }
+}

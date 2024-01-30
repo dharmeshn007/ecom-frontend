@@ -1,0 +1,83 @@
+<div class="widget wg-filterslist">
+  <h3 class="wg-title">Gender</h3>
+  <div class="wg-body">
+    <ul class="wgfl-list">
+      <li *ngFor="let gender of product_filter.gender">
+        <input class="color-option" type="checkbox" value="{{gender.key}}" [checked]="genderChecked(gender.key)" (change)="filterGender($event,gender)">
+        <label for="brand-checkbox1" class="stl"><span></span>{{gender.key}} 
+          <!-- <em class="wgfl-count">({{gender.doc_count}})</em> -->
+        </label><br/>
+      </li>
+
+    </ul>
+  </div>
+</div> <!-- widget -->
+
+<!-- <div>Gender</div>
+  <ul class="list-unstyled">
+    <li class="mb-3" *ngFor="let gender of product_filter.gender">
+      <label class="checkbox is-size-4">
+        <input type="checkbox" value="{{gender.key}}" [checked]="gender.value" (change)="filterGender(gender)">
+        <span>{{gender.key}}({{gender.doc_count}})</span>
+      </label>
+    </li>
+  </ul> -->
+<!-- <div>Color</div>
+  <ul>
+    <li class="mb-3 color-item" *ngFor="let color of product_filter.color">
+      <label class="checkbox is-size-4">
+        <input type="checkbox" value="{{color.key}}" [checked]="color.value" (change)="filterColor(color)">
+        <span [style.background-color]="color.key"></span>({{color.doc_count}})
+      </label>
+    </li>
+  </ul> -->
+
+<!-- <div>Price</div>
+  <ul class="list-unstyled">
+    <ng-container *ngFor="let price of product_filter.price">
+      <li class="mb-3" *ngIf="price.doc_count>0">
+        <label class="checkbox is-size-4">
+          <input type="checkbox" value="{{price.key}}" [checked]="price.value" (change)="filterPrice(price)">
+          <span class="pl-2" *ngIf="price.from">{{price.from}}-</span><span
+            class="pl-2">{{price.to}}({{price.doc_count}})</span>
+        </label>
+      </li>
+    </ng-container>
+  </ul> -->
+
+<div class="widget wg-price-fiter">
+  <h3 class="wg-title">Filter by price</h3>
+  <div class="wg-body">
+    <ngx-slider [(value)]="priceMinValue" [(highValue)]="priceMaxValue" (mouseup)="sliderEvent()"  [options]="options"></ngx-slider>
+    <!-- <ul class="list-unstyled">
+      <ng-container *ngFor="let price of product_filter.price">
+        <li class="mb-3" *ngIf="price.doc_count>0">
+          <label class="checkbox is-size-4">
+            <input type="checkbox" value="{{price.key}}" [checked]="priceChecked(price.key)" (change)="filterPrice($event,price)">
+            <label for="brand-checkbox1" class="stl"><span></span>{{price.from}}-{{price.to}}
+              <em class="wgfl-count">({{price.doc_count}})</em>
+            </label><br/>
+            
+          </label>
+        </li>
+      </ng-container>
+    </ul> -->
+  </div>
+</div>
+<div class="widget wg-filterslist">
+  <h3 class="wg-title">Color</h3>
+  <div class="wg-body">
+    <ul class="wgfl-list">
+      <li *ngFor="let color of product_filter.color">
+
+        <input class="color-option" [style.background]="color.key" type="checkbox" value="{{color.key}}"
+          [checked]="colorChecked(color.key)" (change)="filterColor($event,color)">
+          <label for="brand-checkbox1" class="stl"><span></span>{{color.key}}
+             <!-- <em class="wgfl-count">({{color.doc_count}})</em> -->
+            </label><br/>
+          <!-- <a href="#">{{color.key}} <em class="wgfl-count">({{color.doc_count}})</em></a> -->
+      </li>
+    </ul>
+
+  </div>
+</div> <!-- widget -->

@@ -1,0 +1,19 @@
+{
+  "Id": 1,
+  "code": "101076A",
+  "Name": "Cashmere Jacket",
+  "Label": "Men Cotton Washed Cashmere Jacket",
+  "longDescription": "Cashmere Jacket",
+  "brand": "WROGN",
+  "markedPrice": 800,
+  "sellingPrice": 500,
+  "availableQuantity": 2,
+  "Image": "assets/images/product_page_gallery/1.jpg",
+  "secondaryImageUrl": "assets/images/product_page_gallery/1.jpg",
+  "badge": "NEW",
+  "active": true,
+  "isNew": true,
+  "isFeatured": true,
+  "isSpecial": true,
+  "isBestSeller": true
+}
