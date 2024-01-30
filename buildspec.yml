@@ -5,6 +5,8 @@ env:
     BUILD_FOLDER: "dist/amcart-E-Commerce"
 phases:
   install:
+    runtime-versions:
+      nodejs: 20.11.0
     commands:
       - echo "Installing source NPM dependencies…"
       - npm install
